@@ -14,4 +14,4 @@ curl -X POST http://localhost:8080/api/orders \
 curl -X POST http://localhost:8080/graphql \
 -H 'content-type: application/json' \
 -d '{"query":"mutation($in:CreateOrderInput!){ createOrder(input:$in){ id status } }",
-"variables":{"in":{"customerEmail":"demo@example.com","amount": 42.0}}
+"variables":{"in":{"customerEmail":"demo@example.com","amount": 42.0}} }'
